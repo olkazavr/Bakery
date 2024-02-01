@@ -38,7 +38,22 @@
                 </svg>
             </button>
             <div class="mobile-menu">
-                <button class="mobile-menu__btn-close menu-btn-close"  type="button">Close</button>
+                <button class="mobile-menu__btn-close menu-btn-close"  type="button">
+                    <svg class="mobile-menu__icon"  width="16" height="16">
+                        <use href="./images/icons.svg#icon-close_btn"></use>
+                    </svg>
+                </button>
+                <nav class="mobile-menu__nav">
+                    <a href="index.html">
+                        <img src="./images/mobile-menu__logo.svg" alt="Логотип сучасної пекарні">
+                    </a>
+                    <ul class="mobile-menu__menu">
+                        <li> <a class="mobile-menu__link" href="#traditions-section">Наші традиціі</a></li>
+                        <li> <a class="mobile-menu__link" href="#chefs-section">Шеф-кухарі</a></li>
+                        <li> <a class="mobile-menu__link" href="#formats-section">Формати</a></li>
+                        <li> <a class="mobile-menu__link" href="#contact-section">Контакти</a></li>
+                    </ul>
+                </nav>
             </div>
         </div>
         </div>
@@ -312,7 +327,11 @@
 
     <div class="backdrop is-hidden">
         <div class="modal">
-            <button class="modal-btn-close" type="button">Close</button>
+            <button class="modal-btn-close" type="button">
+                <svg  width="24" height="24">
+                    <use href="./images/icons.svg#icon-close_btn"></use>
+                </svg>
+            </button>
             <form name="modal-form" autocomplete="off" novalidate>
                 <h2>Замовити дзвінок</h2>
                 <p>Залишіть заявку та наш спеціаліст зв'яжеться з Вами!</p>

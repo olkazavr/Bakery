@@ -248,7 +248,12 @@ img {
   max-width: 710px;
 }
 .traditions-section__title {
-  margin-bottom: 42px;
+  margin-bottom: 22px;
+}
+@media screen and (min-width: 768px) {
+  .traditions-section__title {
+    margin-bottom: 42px;
+  }
 }
 .traditions-section__text--limited {
   max-width: 330px;
@@ -263,6 +268,9 @@ img {
   }
 }
 
+.chefs-section {
+  padding-top: 40px;
+}
 .chefs-section__title {
   position: relative;
   margin: 0 auto 24px;
@@ -294,7 +302,7 @@ img {
 .chefs-section__list {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 35px;
   flex-wrap: wrap;
 }
 @media screen and (min-width: 768px) {
@@ -323,11 +331,12 @@ img {
 .chef-photo {
   width: 140px;
   border-radius: 4px 4px 4px 200px;
-  box-shadow: -16px 16px 0 0 var(--primary-light), -16px 16px 0 2px var(--color-secondary-dark);
+  box-shadow: -10px 10px 0 0 var(--primary-light), -10px 10px 0 2px var(--color-secondary-dark);
 }
 @media screen and (min-width: 1280px) {
   .chef-photo {
     width: 240px;
+    box-shadow: -16px 16px 0 0 var(--primary-light), -16px 16px 0 2px var(--color-secondary-dark);
   }
 }
 
@@ -365,18 +374,15 @@ img {
   overflow: hidden;
 }
 .formats-section__title {
-  margin-bottom: 80px;
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 768px) {
+  .formats-section__title {
+    margin-bottom: 80px;
+  }
 }
 .formats-section__list {
   margin-bottom: 32px;
-}
-.formats-section__button {
-  display: none;
-}
-@media screen and (min-width: 768px) {
-  .formats-section__button {
-    display: flex;
-  }
 }
 
 .format-card {
@@ -419,7 +425,7 @@ img {
 }
 
 .carousel-button {
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
@@ -431,6 +437,11 @@ img {
   background-color: transparent;
   border: 1px solid var(--primary-dark);
   cursor: pointer;
+}
+@media screen and (min-width: 768px) {
+  .carousel-button {
+    display: flex;
+  }
 }
 
 .carousel-button.next {
@@ -601,6 +612,8 @@ img {
   position: absolute;
   top: 40px;
   right: 40px;
+  border: none;
+  background-color: transparent;
 }
 
 .form-field {
@@ -671,7 +684,7 @@ img {
 }
 
 .section {
-  padding: 20px 0;
+  padding: 10px 0;
 }
 @media screen and (min-width: 768px) {
   .section {
@@ -708,8 +721,34 @@ img {
 }
 .mobile-menu__btn-close {
   position: absolute;
-  top: 16px;
+  top: 25px;
   right: 24px;
+  background-color: transparent;
+  border: none;
+}
+.mobile-menu__nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 24px;
+  padding-top: 25px;
+}
+.mobile-menu__menu {
+  display: flex;
+  flex-direction: column;
+  padding-top: 32px;
+  gap: 16px;
+}
+.mobile-menu__link {
+  color: var(--primary-dark);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.mobile-menu__link:hover {
+  color: var(--color-brand-normal);
+}
+.mobile-menu__icon {
+  fill-opacity: var(--primary-light);
 }
 
 .pagination {
@@ -727,10 +766,6 @@ img {
 }
 .pagination__button--active {
   background-color: var(--color-brand-normal);
-}
-
-.section {
-  padding: 48px 0;
 }
 
 .container {

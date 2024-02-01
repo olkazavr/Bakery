@@ -14,7 +14,36 @@
 
     &__btn-close {
         position: absolute;
-        top: 16px;
+        top: 25px;
         right: 24px;
+        background-color: transparent;
+        border: none;
+    }
+
+    &__nav{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 24px;
+        padding-top: 25px;
+    }
+
+    &__menu{
+        display: flex;
+        flex-direction: column;
+        padding-top: 32px;
+        gap: 16px;
+    }
+
+    &__link{
+            color: var(--primary-dark);
+            text-decoration: none;
+            transition: color 0.3s;
+    }
+    &__link:hover{
+        color: var(--color-brand-normal);
+    }
+    &__icon{
+        fill-opacity: var(--primary-light);
     }
 }
